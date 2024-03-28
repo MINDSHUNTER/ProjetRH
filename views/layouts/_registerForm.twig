@@ -1,0 +1,36 @@
+{% block main %}
+<main>
+    <div class = "register-form">
+        <h2>Inscription</h2>
+        <form action="/addCompany" method="POST">
+            <div>
+                <label for="business_name">Nom de l'entreprise</label>
+                <input id="business_name" name="business_name" type="text" placeholder="Dénomination sociale">
+            </div>
+            <div>
+                <label for="siret_number">Numéro SIRET de l'entreprise</label>
+                <input id="siret_number" name="siret_number" type="text" placeholder="123 123 123 12345">
+            </div>
+            <div>
+                <label for="business_director">Directeur de l'entreprise</label>
+                <input id="business_director" name="business_manager" type="text" placeholder="Jon Doe">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="monentreprise@example.com">
+            </div>
+            <div>
+                <label for="password">Mot de passe</label>
+                <input id="password" name="password" type="password" placeholder="************">
+            </div>
+            
+            <div>
+                <button type="submit">S'inscrire</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "../base.twig" %}
+
+{% block main %}
+
+
+	<main id="dashboard-ctn">
+		<h1>Bievenue sur HRConnect application</h1>
+		<div class="search-form-container">
+			<form class="search-form" action="/search" method="GET">
+				<input type="text" name="search" placeholder="Rechercher par nom">
+                
+				<button type="submit">Rechercher</button>
+			</form>
+
+		</div>
+
+
+		{% include "../layouts/_employeeForm.twig" %}
+
+
+		{% include "../layouts/employeeView.twig" %}
+	</main>
+
+
+{% endblock %}

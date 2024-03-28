@@ -1,0 +1,18 @@
+{% extends "base.twig" %}
+
+{% block main %}
+<main class="home">
+    <p>{{ errors.server_error }}</p>
+    <div>
+        <img src="/images/HR.avif" alt="">
+    </div>
+    <div>
+        <h2>HRConnect</h2>
+        <h3>Facilitez la gestion de votre entreprise grâce à HRConnect : une application conviviale qui simplifie l'inscription et la supervision de vos collaborateurs !</h3>
+        <div class="button-container">
+            <button type="button" class="small-button"><a href="/register">S'inscrire</a></button>
+            <button type="button" class="small-button"><a href="/login">Se connecter</a></button>
+        </div>
+    </div>
+</main>
+{% endblock %}

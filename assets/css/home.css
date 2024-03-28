@@ -1,0 +1,258 @@
+/* Styles pour le corps de la page */
+
+   
+.register-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main h1{
+    margin-bottom: 10px;
+    color:antiquewhite;
+}
+/* Styles pour la section principale */
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+.form-container h2 {
+    color: wheat;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.login-form h2{
+    color: #f2f2f2;
+}
+/* Styles pour les formulaires */
+form {
+    width: 310px; 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+}
+
+
+form h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+body {
+    margin:0;
+    background-image: url('/assets/images/HR.avif');
+    background-size: cover;
+    background-position: center; 
+    object-fit: cover;}
+
+
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+button {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+/* Styles pour les boutons au survol */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour les liens à l'intérieur des boutons */
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styles pour le paragraphe des erreurs */
+p.error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/*******************header css**********/
+/* Styles pour le header */
+header {
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    position: relative; 
+}
+header li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+/* Styles pour le bouton */
+#logout-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px; 
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+#logout-btn:hover {
+    transform: translateY(-50%) scale(1.1); 
+    background-color: #0056b3; 
+}
+
+/****hom css*********/
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.home img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.home h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.home h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.small-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+}
+
+.small-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .home h2 {
+        font-size: 1.5rem;
+    }
+
+    .home h3 {
+        font-size: 1.2rem;
+    }
+
+    .small-button {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+#logout-btn:hover {
+    background-color: #0056b3;
+}
+
+/********search form***/
+
+.search-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.search-form {
+    width: 50%; 
+    max-width: 500px; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
+    border-radius: 10px; 
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    outline: none; 
+}
+
+.search-form button[type="submit"] {
+    width: 100%; 
+    padding: 10px; 
+    background-color: #007bff;
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.search-form button[type="submit"]:hover {
+    background-color: #0056b3; 
+}
+

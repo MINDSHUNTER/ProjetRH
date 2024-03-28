@@ -1,0 +1,30 @@
+
+
+
+{% extends "adminBase.twig" %}
+
+{% block main %}
+    <div class="employee-container">
+        {% for employee in company.employees %}
+            <div class="employee-card">
+                <div class="employee-content">
+                    <div class="employee-image">
+                        <img src="/uploads/{{ employee.photo }}" alt="Photo de l'employé">
+                    </div>
+                    <div class="employee-title">{{ employee.firstname }} {{ employee.name }}</div>
+                    <div class="employee-info">
+                        <p>{{ employee.function }}</p>
+                        <p>Nombre de blâme: {{ employee.number_of_blames }}</p>
+                    </div>
+                    <div class="employee-links">
+                        <a href="/updateEmployee/{{ employee.id }}">Modifier</a>
+                        <a  href="/deleteEmployee/{{ employee.id }}">Supprimer</a>
+                        <a  href="/blameEmployee/{{ employee.id }}">Blâmer</a>
+                    </div>
+                </div>
+                
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+

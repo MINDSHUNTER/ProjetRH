@@ -1,0 +1,39 @@
+{% block main %}
+    <div class="form-container">
+        <h2>Ajouter un nouvel employé</h2>
+        <form {% if employee %} action="/updateEmployee/{{employee.id}}" {% else %} action="/addEmployee" {% endif %} method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="name">Nom de l'employé</label>
+                <input type="text" name="name" id="name" {% if employee %} value="{{employee.name}}" {% endif %} placeholder="Doe" required>
+                <p class="error-message">{{errors.name.message}}</p>
+            </div>
+            <div>
+                <label for="firstname">Prénom de l'employé</label>
+                <input type="text" name="firstName" id="firstname" {% if employee %} value="{{employee.firstname}}" {% endif %} placeholder="John" required>
+                <p class="error-message">{{errors.firstname.message}}</p>
+            </div>
+            <div>
+                <label for="function">Fonction dans l'entreprise</label>
+                <input type="text" name="function" id="function" {% if employee %} value="{{employee.function}}" {% endif %} placeholder="Développeur, Secrétaire..." required>
+                <p class="error-message">{{errors.function.message}}</p>
+            </div>
+            <div>
+                <label for="photo">Sélectionner une image</label>
+                <input type="file" name="photo" id="photo" onchange="previewImage(event)" {% if employee %} value="{{employee.photo}}" {% endif %}>
+                <span class="file-name"></span>
+                <div class="image-preview">
+                    <img id="preview" src="#" alt="" class="hidden">
+                </div>
+            </div>
+            <div>
+                <button type="submit">
+                    {% if employee %}
+                        Modifier
+                    {% else %}
+                        Ajouter un employé
+                    {% endif %}
+                </button>
+            </div>
+        </form>
+    </div>
+{% endblock %}
