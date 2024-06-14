@@ -6,7 +6,6 @@ const authguard = async (req, res, next) => {
             let admin = await companyModel.findOne({ _id: req.session.admin })
 
             if (admin) {
-
                 return next();
             }
         }

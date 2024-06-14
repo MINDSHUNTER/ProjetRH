@@ -74,11 +74,10 @@ companyRouter.post('/login', async (req, res)  => {
             throw { email: "Cet utilisateur n'est pas enregistré" }
         }
     } catch (error) {
-        res.render('pages/login.twig',)
+        res.render('pages/login.twig',{ error })
     }
 }
 )
-
 
 companyRouter.get('/logout',async(req,res)=>{
     try {

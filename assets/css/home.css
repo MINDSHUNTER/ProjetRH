@@ -89,16 +89,20 @@ button {
     transition: background-color 0.3s; 
 }
 
-/* Styles pour les boutons au survol */
 button:hover {
     background-color: #0056b3;
 }
 
-/* Styles pour les liens à l'intérieur des boutons */
+
 button a {
     color: #fff;
     text-decoration: none;
 }
+.error-message {
+    margin-top: 0;
+    color: red; 
+    font-size: 12px; 
+    margin-top: 5px; }
 
 /* Styles pour le paragraphe des erreurs */
 p.error {
@@ -108,7 +112,6 @@ p.error {
     text-align: center;
 }
 /*******************header css**********/
-/* Styles pour le header */
 header {
     background-color: #f2f2f2;
     padding: 10px 20px;
@@ -120,7 +123,6 @@ header li {
     padding: 0;
     margin-top: 10px;
 }
-/* Styles pour le bouton */
 #logout-btn {
     position: absolute;
     top: 50%;

@@ -8,7 +8,6 @@ const upload =require('../services/multer');
 
 employeeRouter.post('/addEmployee', authGuard,upload.single("photo"), async(req,res)=>{
     try {
-        
         let newEmployee = new employeeModel(req.body);
         if (req.file) {
             newEmployee.photo = req.file.filename;
@@ -25,7 +24,6 @@ employeeRouter.post('/addEmployee', authGuard,upload.single("photo"), async(req,
       console.log(error);
         req.session.errors = error.errors;
         res.redirect("/adminDashboard");
-        
     }
 });
 

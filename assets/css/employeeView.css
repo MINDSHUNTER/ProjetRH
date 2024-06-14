@@ -2,7 +2,6 @@
 main h1{
     text-align: center;
 }
-/* Styles pour le conteneur des employés */
 .employee-container {
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +36,6 @@ a {
     object-fit: cover;
     display: none;
 }
-/* Styles pour chaque carte d'employé */
 .employee-card {
     width: 350px;
     background-color: #ffffff;
@@ -47,24 +45,20 @@ a {
 
 }
 
-/* Styles pour le contenu de la carte */
 .employee-content {
     padding: 20px;
 }
 
-/* Styles pour le titre */
 .employee-title {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-/* Styles pour les informations sur l'employé */
 .employee-info {
     margin-bottom: 10px;
 }
 
-/* Styles pour les liens */
 .employee-links {
     display: flex;
     justify-content: space-between;
@@ -82,27 +76,24 @@ a {
 }
 
 .employee-links a:hover {
-    transform: scale(1.1); /* Agrandit le bouton de 10% */
+    transform: scale(1.1); 
 }
-/* Styles pour le bouton "Modifier" */
 a[href^="/updateEmployee"] {
-    background-color: green; /* Couleur jaune */
-    color: white; /* Texte noir */
+    background-color: green; 
+    color: white; 
 }
 a[href^="/deleteEmployee"] {
-    background-color: red; /* Couleur jaune */
-    color: white; /* Texte noir */
+    background-color: red; 
+    color: white;
 }
 
 
 
-/* Styles pour le bouton "Blâmer" */
 a[href^="/blameEmployee"] {
-    background-color: orange; /* Couleur orange */
-    color: white; /* Texte blanc */
+    background-color: orange; 
+    color: white; 
 }
 
-/* Styles pour la modal de confirmation */
 .confirmation-modal {
     display: none;
     position: fixed;
@@ -115,7 +106,6 @@ a[href^="/blameEmployee"] {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles pour la forme ronde des images */
 .employee-image {
     width: 100px;
     height: 100px;
@@ -123,7 +113,6 @@ a[href^="/blameEmployee"] {
     overflow: hidden;
 }
 
-/* Styles pour l'image à l'intérieur de la forme ronde */
 .employee-image img {
     width: 100%;
     height: 100%;
